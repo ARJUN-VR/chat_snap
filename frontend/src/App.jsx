@@ -1,12 +1,13 @@
+import { Body } from "./components/Body"
+import { Header } from "./components/Header"
 
 
 function App() {
 
   return (
     <>
-    <div className='m-10'>
-      hello world!!!
-    </div>
+      <Header />
+      <Body />
     </>
   )
 }
