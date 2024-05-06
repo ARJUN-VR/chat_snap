@@ -1,14 +1,17 @@
-import { Body } from "./components/Body"
-import { Header } from "./components/Header"
+import { UserRoutes } from "./UserRoutes"
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Body />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<UserRoutes />} />
+    </Routes>
+
+    </BrowserRouter>
+
   )
 }
 
